@@ -1,12 +1,24 @@
 """
 -----------------------------
 CP460 (Fall 2020)
-Name: Samuel Bergin<------------------------- edit this
-ID:  170670850 <------------------------- edit this
-Final Exam
+Name: sam bergin<------------------------- edit this
+ID:   170670850<------------------------- edit this
+Assignment 4 (mod Library)
 -----------------------------
 """
-# add your A4 mod.py implementation in this file
+
+import math
+import string
+
+#-----------------------------------------------------------
+# Parameters:   mod (int)
+# Return:       r_list (list)
+# Description:  Returns list of numbers in the given mod
+#               which are residues of all other numbers
+# Example:      residue_list(5) --> [0,1,2,3,4]
+# Errors:       If mode is not a positive integer:
+#                   return 'Error(residue_list): Invalid mod'
+#-----------------------------------------------------------
 def residue_list(mod):
     
     if (type(mod) != int) or mod <= 0:

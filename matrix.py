@@ -1,11 +1,23 @@
 """
 -----------------------------
 CP460 (Fall 2020)
-Name:Samuel Bergin <------------------------- edit this
-ID:  170670850 <------------------------- edit this
-Final Exam
+Name: sam bergin<------------------------- edit this
+ID:   170670850<------------------------- edit this
+Assignment 4 (matrix Library)
 -----------------------------
 """
+import math
+import string
+import mod
+
+#-----------------------------------------------------------
+# Parameters:   A (any input)
+# Return:       True/False
+# Description:  checks if the given input is a valid vector
+#               A valid vector is a list in which all elements are integers
+#               An empty list is a valid vector
+# Errors:       None
+#-----------------------------------------------------------
 def is_vector(A):
     
     if type(A) == list and len(A) == 0:

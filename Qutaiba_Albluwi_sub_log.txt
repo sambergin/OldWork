@@ -1,0 +1,434 @@
+Ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+
+Debug Mode: Enter Command: replace . with  
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :- - - - - - - - - - - - - - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+-- --- ----- -- --- ------- --- --- ----- -- --- -------------- --- --- --- --- ------- -------- ---- -- --- ------ -------- --- ----- ------ ------ ----- --- -------- ------ --- --------- --------- -
+
+_______________________________________
+
+Enter Command: replace q with a
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q - - - - - - - - - - - - - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- --- ----- -- --- ------- a-- --- ----- -- --- -a------------ a-- --- -a- a-- --a---- -a------ ---- -- --- ------ -------- --- ----- --a--- ------ ----- --- -a---a-- -a---- --- ----a---a --------- -
+
+_______________________________________
+
+Enter Command: replace k with b
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k - - - - - - - - - - - - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- --- ----- -- --- ------- a-- --- ----- -- --- -a------------ a-- --- -a- a-- --a---- -a------ ---- -- --- ------ -------- --- ----- --a--- b----- ----- --- -a---a-- -a---- --- ----a---a b-------- -
+
+_______________________________________
+
+Enter Command: replace v with c
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v - - - - - - - - - - - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- --- ----- -- --- ------- a-- --- ----- -- --- -a-c---------- a-- --- -a- a-- --a---- -a-c---- ---- -- --- --c--- -------- --- ----- --a--- b----- ---c- --- ca---a-- -a---- --- c---a---a b-------- -
+
+_______________________________________
+
+Enter Command: replace b with d
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b - - - - - - - - - - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- --- ----d -- --- ------- a-d --- ----- -- --- da-c------d--- a-d --- -a- a-d --a---- -a-c---- ---- -- --- --c--d -------- --- ----- --a--- b---d- ---c- --- ca---a-- -a---d --- c---a---a b-------d -
+
+_______________________________________
+
+Enter Command: replace x with e
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x - - - - - - - - - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- --e ----d -- --e ------- a-d --e ----- -- --e da-c------d-e- a-d --e -a- a-d --a---- -a-c---- -e-- -- --e -ec--d ---e---- --e ----- --a--- be--de ---c- --e ca---a-e -a--ed --e c---a---a b--e-e-ed -
+
+_______________________________________
+
+Enter Command: replace r with f
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r - - - - - - - - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- --e ----d -f --e ------- a-d --e ----- -f --e da-c------d-e- a-d --e -a- a-d --a---- -a-c---- -e-- -- --e -ec--d f--ef--- --e ----- f-a--- be--de ---c- --e ca---a-e -a--ed --e c---a---a b--e-e-ed -
+
+_______________________________________
+
+Enter Command: replace o with g
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o - - - - - - - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- --e ----d -f --e ---g--g a-d --e --g-- -f --e da-c--g---d-e- a-d --e ga- a-d --a---- -a-c---g -e-- -- --e -ec--d f--ef--- --e --g-- f-a--- be--de ---c- --e ca---age -a--ed --e c---a---a b--e-e-ed -
+
+_______________________________________
+
+Enter Command: replace z with h
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z - - - - - - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- -he ----d -f -he ---g--g a-d -he --gh- -f -he da-c--g---d-e- a-d -he ga- a-d --a---- -a-ch--g -e-- -- -he -ec--d f--ef--- -he --gh- f-a--- be--de -h-ch -he ca---age -a--ed -he c---a---a b--e-e-ed -
+
+_______________________________________
+
+Enter Command: replace m with i
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m - - - - - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- -he ----d -f -he -i-gi-g a-d -he -igh- -f -he da-ci-g---die- a-d -he ga- a-d --a---- -a-chi-g -e-- i- -he -ec--d fi-ef--- -he -igh- f-a--- be-ide -hich -he ca--iage -a--ed -he c---a---a b--e-e-ed -
+
+_______________________________________
+
+Enter Command: replace i with j
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i - - - - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- -he ----d -f -he -i-gi-g a-d -he -igh- -f -he da-ci-g---die- a-d -he ga- a-d --a---- -a-chi-g -e-- i- -he -ec--d fi-ef--- -he -igh- f-a--- be-ide -hich -he ca--iage -a--ed -he c---a---a b--e-e-ed -
+
+_______________________________________
+
+Enter Command: replace g with k
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g - - - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- -he ----d -f -he -i-gi-g a-d -he -igh- -f -he da-ci-g---die- a-d -he ga- a-d --a---- -a-chi-g -e-- i- -he -ec--d fi-ef--- -he -igh- f-a-k- be-ide -hich -he ca--iage -a--ed -he c---a---a b--e-e-ed -
+
+_______________________________________
+
+Enter Command: replace e with l
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e - - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- -he ----d -f -he -i-gi-g a-d -he -igh- -f -he da-ci-g--ldie- a-d -he ga- a-d --a--l- -a-chi-g -e-- i- -he -ec--d filef--- -he -igh- fla-k- be-ide -hich -he ca--iage -a--ed -he c---a---a bl-e-e-ed -
+
+_______________________________________
+
+Enter Command: replace l with m
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l - - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- -he ----d -f -he -i-gi-g a-d -he -igh- -f -he da-ci-g--ldie- a-d -he ga- a-d -ma--l- ma-chi-g me-- i- -he -ec--d filef--m -he -igh- fla-k- be-ide -hich -he ca--iage -a--ed -he c-m-a---a bl-e-e-ed -
+
+_______________________________________
+
+Enter Command: replace t with n
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t - - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- -he ---nd -f -he -inging and -he -igh- -f -he dancing--ldie- and -he ga- and -ma--l- ma-ching men- in -he -ec-nd filef--m -he -igh- flank- be-ide -hich -he ca--iage -a--ed -he c-m-an--a bl-e-e-ed -
+
+_______________________________________
+
+Enter Command: replace j with o
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j - - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- -he -o-nd of -he -inging and -he -igh- of -he dancing-oldie- and -he ga- and -ma--l- ma-ching men- in -he -econd filef-om -he -igh- flank- be-ide -hich -he ca--iage -a--ed -he com-an--a bl-e-e-ed -
+
+_______________________________________
+
+Enter Command: replace y with p
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y - - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- -he -o-nd of -he -inging and -he -igh- of -he dancing-oldie- and -he ga- and -ma--l- ma-ching men- in -he -econd filef-om -he -igh- flank- be-ide -hich -he ca--iage pa--ed -he compan--a bl-e-e-ed -
+
+_______________________________________
+
+Enter Command: replace d with q
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d - - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- -he -o-nd of -he -inging and -he -igh- of -he dancing-oldie- and -he ga- and -ma--l- ma-ching men- in -he -econd filef-om -he -igh- flank- be-ide -hich -he ca--iage pa--ed -he compan--a bl-e-e-ed -
+
+_______________________________________
+
+Enter Command: replace c with r
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c - - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- -he -o-nd of -he -inging and -he -igh- of -he dancing-oldier and -he ga- and -mar-l- marching men- in -he -econd filefrom -he righ- flank- be-ide -hich -he carriage pa--ed -he compan--a bl-e-e-ed -
+
+_______________________________________
+
+Enter Command: replace s with s
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s - - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+a- -he so-nd of -he singing and -he sigh- of -he dancingsoldier and -he ga- and smar-l- marching men- in -he second filefrom -he righ- flank- beside -hich -he carriage passed -he compan--a bl-e-e-ed s
+
+_______________________________________
+
+Enter Command: replace h with t
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s h - - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+at the so-nd of the singing and the sight of the dancingsoldier and the ga- and smartl- marching men- in the second filefrom the right flank- beside -hich the carriage passed the compan--a bl-e-e-ed s
+
+_______________________________________
+
+Enter Command: replace u with u
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s h u - - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+at the sound of the singing and the sight of the dancingsoldier and the ga- and smartl- marching men- in the second filefrom the right flank- beside -hich the carriage passed the compan--a blue-e-ed s
+
+_______________________________________
+
+Enter Command: replace w with v
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s h u w - - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+at the sound of the singing and the sight of the dancingsoldier and the ga- and smartl- marching men- in the second filefrom the right flank- beside -hich the carriage passed the compan--a blue-e-ed s
+
+_______________________________________
+
+Enter Command: replace a with w
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s h u w a - - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+at the sound of the singing and the sight of the dancingsoldier and the ga- and smartl- marching men- in the second filefrom the right flank- beside which the carriage passed the compan--a blue-e-ed s
+
+_______________________________________
+
+Enter Command: replace n with x
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s h u w a n - - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+at the sound of the singing and the sight of the dancingsoldier and the ga- and smartl- marching men- in the second filefrom the right flank- beside which the carriage passed the compan--a blue-e-ed s
+
+_______________________________________
+
+Enter Command: replace p with y
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s h u w a n p - . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+at the sound of the singing and the sight of the dancingsoldier and the gay and smartly marching men- in the second filefrom the right flank- beside which the carriage passed the company-a blue-eyed s
+
+_______________________________________
+
+Enter Command: replace f with z
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s h u w a n p f . - - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+at the sound of the singing and the sight of the dancingsoldier and the gay and smartly marching men- in the second filefrom the right flank- beside which the carriage passed the company-a blue-eyed s
+
+_______________________________________
+
+Enter Command: replace : with ,
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s h u w a n p f . : - - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+at the sound of the singing and the sight of the dancingsoldier and the gay and smartly marching men- in the second filefrom the right flank, beside which the carriage passed the company,a blue-eyed s
+
+_______________________________________
+
+Enter Command: replace   with ;
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s h u w a n p f . :   - - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+at the sound of the singing and the sight of the dancingsoldier and the gay and smartly marching men- in the second filefrom the right flank, beside which the carriage passed the company,a blue-eyed s
+
+_______________________________________
+
+Enter Command: replace ; with -
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s h u w a n p f . :   ; - - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+at the sound of the singing and the sight of the dancingsoldier and the gay and smartly marching men- in the second filefrom the right flank, beside which the carriage passed the company,a blue-eyed s
+
+_______________________________________
+
+Enter Command: replace ? with :
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s h u w a n p f . :   ; ? - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+at the sound of the singing and the sight of the dancingsoldier and the gay and smartly marching men- in the second filefrom the right flank, beside which the carriage passed the company,a blue-eyed s
+
+_______________________________________
+
+Enter Command: replace - with ?
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s h u w a n p f . :   ; ? - - 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+at the sound of the singing and the sight of the dancingsoldier and the gay and smartly marching men- in the second filefrom the right flank, beside which the carriage passed the company,a blue-eyed s
+
+_______________________________________
+
+Enter Command: replace , with .
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? . 
+Sub :q k v b x r o z m i g e l t j y d c s h u w a n p f . :   ; ? - , 
+
+ciphertext:
+qh.hzx.sjutb.jr.hzx.smtomto.qtb.hzx.smozh.jr.hzx.bqtvmtosjebmxc.qtb.hzx.oqp.qtb.slqchep.lqcvzmto.lxt,.Mt.hzx.sxvjtb.rmexrcjl.hzx.cmozh.reqtg:.kxsmbx.azmvz.hzx.vqccmqox.Yqssxb.hzx.vjlYqtp:q.keux;xpxb.s
+plaintext :
+at the sound of the singing and the sight of the dancingsoldier and the gay and smartly marching men. in the second filefrom the right flank, beside which the carriage passed the company,a blue-eyed s
+
+_______________________________________
+
+Enter Command: end
+

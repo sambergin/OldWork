@@ -1,0 +1,434 @@
+-------------- Testing cryptanalysis:
+Ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+
+Debug Mode: Enter Command: replace d qith a
+Description: many single char d's point to a
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+-a----------------------------------------------------a------a---a-------------a-------------------a------------a------------a-----a--------a------------a----a-----a--------a--a---a------a---------a--
+
+_______________________________________
+
+Enter Command: replace b with b
+Description: found in word bit
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+-a----------------b----------------------b------------ab-----a---a-b-----------a-------------------a------------a------------a-----a--------a------------a----a-----a--------a-ba---a------ab--------ab-
+
+_______________________________________
+
+Enter Command: replace s with c
+Description: found in word princess
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+-a-----------c----b-----------------c----b------------ab-----a---a-b-----------a-------------------a------------a------------a-----a--------a------------a----a-----a--------a-ba---a------ab--------ab-
+
+_______________________________________
+
+Enter Command: replace i with d
+Description: found in word addressed
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+-a-----------c----b-----------------c----b------------ab-----a---a-b-----------a-------------------a-d-------d--a----dd------a-----a--------add-----d----a----a-----a-d------a-ba---a------ab--------ab-
+
+_______________________________________
+
+Enter Command: replace g with e
+Description: many gs in same words point to e
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+-a-----e-----ce---be-----e----e-e-e-c--e-b---------e--ab-e---a---a-b-----e-e---a--e--e-------------a-d---e---d--a----dde-----a-----a--e--e--add-e--ed----a----a-----a-d------a-ba---a------ab--e--e--ab-
+
+_______________________________________
+
+Enter Command: replace w with f
+Description: found in word father
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+-a-----e-----ce---be-----e----e-e-e-c--e-b---------e--ab-e---a---a-b-----e-e---a--e--e--f----------a-d---e---d--a----dde-----a-----a--e--e--add-e--ed----a----a-----a-d-f----a-ba---a------ab--e--e--ab-
+
+_______________________________________
+
+Enter Command: replace l with g
+Description: found in words
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+-a-----e-----ce---be-----e----e-e-e-c--e-b---------e--ab-e---a---a-b-----e-e---a--e--e--f----------a-d---e---d--a----dde-----a---g-a--e--e--add-e--ed----a----a-----a-d-f----a-bag--a-g--g-ab--e--e--ab-
+
+_______________________________________
+
+Enter Command: replace a with h
+Description: found from "the"
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+-a----he-----ce---be-----e---he-e-e-c--e-b--------he--ab-e---a---a-b----he-e---a--e--e--f----------a-d--he---d--a----dde-----a---g-a--e--e--add-e--ed----a----a----ha-d-f----a-bag-ha-g--g-ab--e-he--ab-
+
+_______________________________________
+
+Enter Command: replace h with i
+Description: found in i'll
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h - - - - - - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+-ai---he---i-ce---be-----e---he-e-e-ci-e-b--------he--ab-e---ai--a-bi---he-e---a--e--e--f----------aid--he---d--a----dde-----a-i-g-a--e--e--add-e--ed-i--a----a----ha-d-f----a-bag-ha-gi-g-ab--e-he--ab-
+
+_______________________________________
+
+Enter Command: replace n with j
+Description: 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n - - - - - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+-ai---he---i-ce---be-----e---he-e-e-ci-e-b--------he--ab-e---ai--a-bi---he-e---a--e--e--f----------aid--he---d--a----dde-----a-i-g-a--e--e--add-e--ed-i--a----a----ha-d-f----a-bag-ha-gi-g-ab--e-he--ab-
+
+_______________________________________
+
+Enter Command: replace c with k
+Description: found in word book
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c - - - - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+-ai---he---i-ce---be-----e---he-e-e-ci-e-b--k-----he--ab-e---ai--a-bi---he-e---a--e--e--f----------aid--he---d--a----dde-----aki-g-a--e--e--add-e--ed-i--a----a----ha-d-f----a-bag-ha-gi-g-ab--e-he--ab-
+
+_______________________________________
+
+Enter Command: replace f with l
+Description: double f at end of word still
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f - - - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+-ail--he---i-ce---be-----e---he-e-e-ci-e-b--k-----he--able---ai--a-bi---he-e---a-le--e--f----------aid--he--ld--a----dde-l---aki-g-a-le--e--add-e--ed-i--a----a----ha-d-f----a-bag-ha-gi-g-ab--e-he--abl
+
+_______________________________________
+
+Enter Command: replace x with m
+Description: madam
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x - - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+-ail--he---i-ce---be-----e---he-e-e-ci-e-b--k-----he--able---ai--a-bi---he-e---a-le--e--f----------aid--he--ld-ma----dde-l---aki-g-a-le--e--add-e--ed-i--a---ma----ha-d-f--m-a-bag-ha-gi-g-ab--e-he--abl
+
+_______________________________________
+
+Enter Command: replace o with n
+Description: found in princess 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o - - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail--he---ince---ben----e---he-e-e-ci-e-b--k--n--he--able---ai--a-bi---he-e---a-le--e--f----------aid--he--ld-man---ddenl---aking-a-le--e--add-e--ed-in-a---man---hand-f--m-a-bag-hanging-ab--e-he--abl
+
+_______________________________________
+
+Enter Command: replace u with o
+Description: from word book
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u - - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail--he---ince---ben--o-e---he-e-e-ci-e-book-on--he--able---ai--a-bi---he-e---a-le--e--fo---o-----aid--he-old-man---ddenl---aking-a-le--e--add-e--ed-in-a--oman---hand-f-om-a-bag-hanging-abo-e-he--abl
+
+_______________________________________
+
+Enter Command: replace p with p
+Description: princess 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p - - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail--he-p-ince---ben--o-e---he-e-e-ci-e-book-on--he--able---ai--a-bi---he-e---a-le--e--fo---o-----aid--he-old-man---ddenl---aking-a-le--e--add-e--ed-in-a--oman---hand-f-om-a-bag-hanging-abo-e-he--abl
+
+_______________________________________
+
+Enter Command: replace j with q
+Description: process of elim 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j - - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail--he-p-ince---ben--o-e---he-e-e-ci-e-book-on--he--able---ai--a-bi---he-e---a-le--e--fo---o-----aid--he-old-man---ddenl---aking-a-le--e--add-e--ed-in-a--oman---hand-f-om-a-bag-hanging-abo-e-he--abl
+
+_______________________________________
+
+Enter Command: replace m with r
+Description: princess
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m - - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail--he-prince---ben--o-er--he-e-erci-e-book-on--he--able---ai--a-bi---here---a-le--er-for--o-----aid--he-old-man---ddenl---aking-a-le--er-addre--ed-in-a--oman---hand-from-a-bag-hanging-abo-e-he--abl
+
+_______________________________________
+
+Enter Command: replace z with s
+Description: princess double z 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z - - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail--he-princess-ben--o-er--he-e-ercise-book-on--he--able---ai--a-bi---here-s-a-le--er-for--o----said--he-old-man-s-ddenl---aking-a-le--er-addressed-in-a--oman-s-hand-from-a-bag-hanging-abo-e-he--abl
+
+_______________________________________
+
+Enter Command: replace t with t
+Description: many words tag = the 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t - - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail-the-princess-bent-o-er-the-e-ercise-book-on-the-table---ait-a-bit--here-s-a-letter-for--o----said-the-old-man-s-ddenl--taking-a-letter-addressed-in-a--oman-s-hand-from-a-bag-hanging-abo-ethe-tabl
+
+_______________________________________
+
+Enter Command: replace r with u
+Description: pushing
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t r - - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail-the-princess-bent-o-er-the-e-ercise-book-on-the-table---ait-a-bit--here-s-a-letter-for--ou---said-the-old-man-suddenl--taking-a-letter-addressed-in-a--oman-s-hand-from-a-bag-hanging-abo-ethe-tabl
+
+_______________________________________
+
+Enter Command: replace q with v
+Description: prevent 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t r q - - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail-the-princess-bent-over-the-e-ercise-book-on-the-table---ait-a-bit--here-s-a-letter-for--ou---said-the-old-man-suddenl--taking-a-letter-addressed-in-a--oman-s-hand-from-a-bag-hanging-abovethe-tabl
+
+_______________________________________
+
+Enter Command: replace y with w
+Description: word wait 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t r q y - - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail-the-princess-bent-over-the-e-ercise-book-on-the-table--wait-a-bit--here-s-a-letter-for--ou---said-the-old-man-suddenl--taking-a-letter-addressed-in-a-woman-s-hand-from-a-bag-hanging-abovethe-tabl
+
+_______________________________________
+
+Enter Command: replace v with x
+Description: excersize 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t r q y v - - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail-the-princess-bent-over-the-exercise-book-on-the-table--wait-a-bit--here-s-a-letter-for--ou---said-the-old-man-suddenl--taking-a-letter-addressed-in-a-woman-s-hand-from-a-bag-hanging-abovethe-tabl
+
+_______________________________________
+
+Enter Command: replace k with y
+Description: word you 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t r q y v k - - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail-the-princess-bent-over-the-exercise-book-on-the-table--wait-a-bit--here-s-a-letter-for-you---said-the-old-man-suddenly-taking-a-letter-addressed-in-a-woman-s-hand-from-a-bag-hanging-abovethe-tabl
+
+_______________________________________
+
+Enter Command: replace e with z
+Description: process of elim 
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t r q y v k e - - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail-the-princess-bent-over-the-exercise-book-on-the-table--wait-a-bit--here-s-a-letter-for-you---said-the-old-man-suddenly-taking-a-letter-addressed-in-a-woman-s-hand-from-a-bag-hanging-abovethe-tabl
+
+_______________________________________
+
+Enter Command: replace , with
+Description: many commas, they are spaces
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t r q y v k e , - - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail-the princess bent over the exercise book on the table--wait a bit- here-s a letter for you-- said the old man suddenly-taking a letter addressed in a woman-s hand from a bag hanging abovethe tabl
+
+_______________________________________
+
+Enter Command: replace   with ,
+Description: many spaces in quotations
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t r q y v k e ,   - - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail-the princess bent over the exercise book on the table--wait a bit, here-s a letter for you,- said the old man suddenly,taking a letter addressed in a woman-s hand from a bag hanging abovethe tabl
+
+_______________________________________
+
+Enter Command: replace ; with ;
+Description:
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t r q y v k e ,   ; - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail-the princess bent over the exercise book on the table--wait a bit, here-s a letter for you,- said the old man suddenly,taking a letter addressed in a woman-s hand from a bag hanging abovethe tabl
+
+_______________________________________
+
+Enter Command: replace - with -
+Description:
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t r q y v k e ,   ; - - - -
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail-the princess bent over the exercise book on the table--wait a bit, here-s a letter for you,- said the old man suddenly,taking a letter addressed in a woman-s hand from a bag hanging abovethe tabl
+
+_______________________________________
+
+
+
+Enter Command: replace . with .
+Description:
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t r q y v k e ,   ; - : - .
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail.the princess bent over the exercise book on the table.-wait a bit, here-s a letter for you,- said the old man suddenly,taking a letter addressed in a woman-s hand from a bag hanging abovethe tabl
+
+_______________________________________
+
+Enter Command: replace : with ?
+Description: from when the prince asked a question
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t r q y v k e ,   ; - : : .
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail.the princess bent over the exercise book on the table.-wait a bit, here-s a letter for you,- said the old man suddenly,taking a letter addressed in a woman-s hand from a bag hanging abovethe tabl
+
+_______________________________________
+
+Enter Command: replace ? with :
+Description:
+
+Base:a b c d e f g h i j k l m n o p q r s t u v w x y z   , ; - : ? .
+Sub :d b s i g w l a h n c f x o u p j m z t r q y v k e ,   ; - ? : .
+
+ciphertext:
+odhf.Tag,Pmhosgzz,bgot,uqgm,tag,gvgmshzg,buuc,uo,tag,tdbfg."Ydht,d,bht ,agmg'z,d,fgttgm,wum,kur ",zdhi,tag,ufi,xdo,zriigofk tdchol,d,fgttgm,diimgzzgi,ho,d,yuxdo'z,adoi,wmux,d,bdl,adolhol,dbuqgtag,tdbf
+plaintext :
+nail.the princess bent over the exercise book on the table.-wait a bit, here-s a letter for you,- said the old man suddenly,taking a letter addressed in a woman-s hand from a bag hanging abovethe tabl
+
+_______________________________________
