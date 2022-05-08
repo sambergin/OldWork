@@ -1,0 +1,175 @@
+----------------------------------------
+Start of Task 1: Permutation Cipher Testing
+
+-------------- Testing validate permutation key:
+key = 5 --> False
+key = ['312', 'stream'] --> False
+key = ('53142', 'stream', '53142') --> False
+key = ('53142a', 'stream') --> False
+key = (53142, 'stream') --> False
+key = ('53142', 'stream') --> True
+key = ('53142', 'block') --> True
+key = ('53142', 'cipher') --> False
+key = ('5312', 'block') --> False
+key = ('6471325', 'stream') --> True
+key = ('30142', 'block') --> False
+key = ('2345', 'stream') --> False
+
+-------------- Testing Stream Mode:
+key = ('21', 'stream')
+plaintext = It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+ciphertext= ta e2yas ou laeua in naemn t sfye-nieto unt q Itk s0ertbi dr pttoadfwiueocb ri cdnt rii.
+plaintext2= It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+Validated
+
+key = ('312', 'stream')
+plaintext = It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+ciphertext= tk 2esbl ru tndei to yrndt r n.te0atude tia a wne fb-cetu iq Iasyroiapaonfm us ceii noit
+plaintext2= It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+Validated
+
+key = ('3124', 'stream')
+plaintext = It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+ciphertext= te ysuau in ensy- it uttse t irtodwuobi dti . Ik0 rbdptaf ie crcnria2aolean am tfen eonq
+plaintext2= It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+Validated
+
+key = ('35124', 'stream')
+plaintext = It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+ciphertext= t2 ruraa eu fritn qa 0siet n wtc-doiqIe eod u oai sbnnu.k yt lpidmeyiertqts ab atnf noectiq
+plaintext2= It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+Validated
+
+key = ('351642', 'stream')
+plaintext = It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+ciphertext= t0 tdtaw eb ctiea ue ianf- e uqIsripofu cin i keb rtdiord r. t2slunetyntnay oa anms eiot
+plaintext2= It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+Validated
+
+key = ('7415263', 'stream')
+plaintext = It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+ciphertext= ty beoee ed uqkai ua mo-nn q ssdadncntt qt0 o rif tbirqae up nwsreiqerltnif it iqI2 tatauyco.
+plaintext2= It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+Validated
+
+-------------- Testing Block Mode:
+key = ('21', 'block')
+plaintext = It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+ciphertext= tIt kase2  0eyra sotb iudla r petutaoi nna d aef wimunet sfoc byrei-cndine totr iu ntiq.
+plaintext2= It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+Validated
+
+key = ('312', 'block')
+plaintext = It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+ciphertext=  Itkta es 20aye rs toibu ldra uepttanion aad e fmw uinstef oy crben-idciteno tu r in.it
+plaintext2= It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+Validated
+
+key = ('3124', 'block')
+plaintext = It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+ciphertext=  Itteaks0 2 ayerts ou bi ldae rpauttnio dan fa emw itnueos fy cb-eriincdten  tornui .itq
+plaintext2= It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+Validated
+
+key = ('35124', 'block')
+plaintext = It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+ciphertext=  aItts2ke ya0 e orstul biard  uaepto tindaan e  fwntmiu fesoye cbicr-netidnor t niui qqt.q
+plaintext2= It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+Validated
+
+key = ('351642', 'block')
+plaintext = It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+ciphertext=  aIktt 0e 2sasy re utibo  lraduaettpnain oafde  mnwui sotf eye rbcni-dcitteo nun  ir.qiqqt
+plaintext2= It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+Validated
+
+key = ('7415263', 'block')
+plaintext = It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+ciphertext= etIatk e0s  y2  atrosalbdu iap urtennt iaow df eaen umtiyfs  coc-bienrtnitd e uoi nrqqiqtq.
+plaintext2= It takes 20 years to build a reputation and a few minutes of cyber-incident to ruin it.
+Validated
+
+End of Task 1: Permutation Cipher Testing
+----------------------------------------
+
+----------------------------------------
+Start of Task 2: ADFGVX Cipher
+
+-------------- Testing ADFGVX Square:
+ADFGVX Square = 
+['F', 'L', '1', 'A', 'O', '2']
+['J', 'D', 'W', '3', 'G', 'U']
+['C', 'I', 'Y', 'B', '4', 'P']
+['R', '5', 'Q', '8', 'V', 'E']
+['6', 'K', '7', 'Z', 'M', 'X']
+['S', 'N', 'H', '0', 'T', '9']
+
+-------------- Testing Encryption/Decryption:
+key =       Rose
+plaintext = In England, there was scarcely an amoun
+ciphertext= FGda dvxxgagadggvdvv dadxvxvvva adfxfg 
+plaintext2= In England, there was scarcely an amoun
+Validated
+
+key =       flower
+plaintext = The story was very pretty and interesti
+ciphertext= gadgfg fdxgf,xddv xdfafd dxxfadxd dfaxa
+plaintext2= The story was very pretty and interesti
+Validated
+
+key =       Sunflower
+plaintext = A tale of two cities by Charles Dickens
+ciphertext= Ax adFdfaxg axfg affadf vaxadgxvaagd ff
+plaintext2= A tale of two cities by Charles Dickens
+Validated
+
+key =       Marigold
+plaintext = In cryptography, the one-time pad (OTP)
+ciphertext= Ffdx fxg(fgfafgxaxggxfxxvdvggd fvgaxx ,
+plaintext2= In cryptography, the one-time pad (OTP)
+Validated
+
+End of Task 2: ADFGVX Cipher Testing
+----------------------------------------
+
+----------------------------------------
+Start of Task 3: Myszkowski Cipher
+
+-------------- Testing Key order:
+Key order for 34 = []
+Key order for  = []
+Key order for a = []
+Key order for ab = []
+Key order for aa = []
+Key order for ['d', 'o', 'o', 'r'] = []
+Key order for Dad = []
+Key order for DOOR = []
+Key order for Dad = []
+Key order for dad = [1, 0, 1]
+Key order for apple = [0, 3, 3, 2, 1]
+Key order for good day = [2, 3, 3, 1, 1, 0, 4]
+Key order for Vigenere Cipher = [3, 1, 0, 4, 0, 6, 0, 3, 5, 2, 0, 6]
+
+-------------- Testing Encryption/Decryption:
+Testing encryption/decryption:
+key = swindon, key order = [4, 5, 1, 2, 0, 3, 2]
+plaintext = AMIDSUMMERNIGHTSDREAM
+ciphertext= SIEIRDDMNHRMUGAAMTMES
+plaintext2= AMIDSUMMERNIGHTSDREAM
+Validated
+
+key = deemed, key order = [0, 1, 1, 2, 1, 0]
+plaintext = The Taming of the Shrew
+ciphertext= Tmi thewqh ea ngf eSrqqqTohq
+plaintext2= The Taming of the Shrew
+Validated
+
+key = One Time Pad, key order = [5, 2, 3, 4, 2, 0, 1]
+plaintext = In cryptography, the one-time pad (OTP) is an encryption technique that cannot
+ciphertext= ph np)cnqcedqham hye ,etagnc, tat otsra mT cc epxryitrdo cmuddTlpt ibcb toutee
+plaintext2= In cryptography, the one-time pad (OTP) is an encryption technique that cannot
+Validated
+
+End of Task 3: Myszkowski Cipher Testing
+----------------------------------------
+

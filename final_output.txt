@@ -1,0 +1,478 @@
+----------------------------------------
+Start of Task 1: Mathx  Cipher Testing
+
+----- Part 1: validate mathx key:
+['abc', [1, 1, 1]]             = False
+('ab', [1, 1, 1])              = False
+('abc', [1, 1, 1.0])           = False
+(123, [1, 1, 1])               = False
+('abc', (1, 1, 1))             = False
+('abc', [1, 1])                = False
+('abc', [1, '1', 1])           = False
+('abc', [0, 0, 0])             = False
+('abcdefghijklmn', [6, 4, 2])  = False
+('abcdefghijklmn', [9, 2, 3])  = False
+('abcdefghijklmn', [11, 7, 1]) = True
+('abc', [1, 1, 1])             = True
+
+----- Part 2: encryption:
+key =       ('abcdefghijklmnopqrstuvwxyz', [5, 9, 11])
+plaintext = The quick brown fox jumps over the lazy dog
+ciphertext= Tlc myowu tpged fgh ryajs gbcp vlc xqnk zgi
+
+key =       ('abcdefghijklmnopqrstuvwxyz ', [43, 5, 17])
+plaintext = The quick brown fox jumps over the lazy dog
+ciphertext= Tqelzouxbltcrwnlir lyojvglrseclkqelfphdlarm
+
+key =       ('Tabcdefghijklmnopqrstuvwxyz', [7, 5, 13])
+plaintext = The quick brown fox jumps over the lazy dog
+ciphertext= dwz njvat bmphq ypg ujrol pizm kwz scef Tpx
+
+key =       ('abcdefghijklmnopqrstuvwxyz', [12, 1, 12])
+plaintext = The quick brown fox jumps over the lazy dog
+ciphertext= The quick brown fox jumps over the lazy dog
+
+key =       ('abcdefghijklmnopqrstuvwxyz', [0, 0, 0])
+plaintext = The quick brown fox jumps over the lazy dog
+Error(e_mathx): invalid key
+ciphertext= 
+
+----- Part 3: decryption:
+key =       ('abcdefghijklmnopqrstuvwxyz', [5, 9, 11])
+ciphertext= Tlc myowu tpged fgh ryajs gbcp vlc xqnk zgi
+plaintexts= The quick brown fox jumps over the lazy dog
+
+key =       ('abcdefghijklmnopqrstuvwxyz ', [43, 5, 17])
+ciphertext= Tqelzouxbltcrwnlir lyojvglrseclkqelfphdlarm
+plaintexts= The quick brown fox jumps over the lazy dog
+
+key =       ('Tabcdefghijklmnopqrstuvwxyz', [7, 5, 13])
+ciphertext= dwz njvat bmphq ypg ujrol pizm kwz scef Tpx
+plaintexts= The quick brown fox jumps over the lazy dog
+
+key =       ('abcdefghijklmnopqrstuvwxyz', [12, 1, 12])
+ciphertext= The quick brown fox jumps over the lazy dog
+plaintexts= The quick brown fox jumps over the lazy dog
+
+key =       ('abcdefghijklmnopqrstuvwxyz', [0, 0, 0])
+ciphertext= The quick brown fox jumps over the lazy dog
+Error(d_mathx): Invalid key
+plaintexts= 
+
+----- Part 4: Classify mathx:
+('abcdefghijklmnopqrstuvwxyz', [2, 1, 2])      is No encipherment
+('abcdefghijklmnopqrstuvwxyz', [10, 6, 3])     is Invalid
+('abcdefghijklmnopqrstuvwxyz', [6, 3, 2])      is Decimation
+('abcdefghijklmnopqrstuvwxyz', [7, 4, 9])      is Invalid
+('abcdefghijklmnopqrstuvwxyz', [17, 1, 43])    is No encipherment
+('abcdefghijklmnopqrstuvwxyz', [19, 2, 10])    is Affine
+('abcdefghijklmnopqrstuvwxyz', [1, 1, 1])      is No encipherment
+('abcdefghijklmnopqrstuvwxyz', [25, 24, 4])    is Affine
+('abcdefghijklmnopqrstuvwxyz', [25, 24, 5])    is Invalid
+('abcdefghijklmn', [14, 28, 14])               is Invalid
+('abcdefghijklmno', [49, 7, 9])                is Affine
+('abcdefghijklmno', [4, 7, 7])                 is Decimation
+('abcdefghijklmnopq', [3, 18, 20])             is No encipherment
+('abcdefghijklmnopqrstuvw', [2, 25, 1])        is Decimation
+('abcdefghijklmnopqrstuvwxyz ', [8, 8, 11])    is Affine
+('abcdefghijklmnopqrstuvwxyz?!#', [103, 8, 2]) is Decimation
+
+----- Part 5: mathx Key Domain:
+Percentage of valid keys in base (abc) = 55.56%
+Percentage of valid keys in base (abcd) = 47.25%
+Percentage of valid keys in base (abcde) = 63.89%
+Percentage of valid keys in base (abcdefghij) = 53.25%
+Percentage of valid keys in base (abcdefghijklm) = 65.09%
+Percentage of valid keys in base (abcdefghijklmnopqrstuvwxyz) = 59.59%
+
+----- Part 6: cryptanalysis mathx:
+key = ('abcdefghijklmnopqrstuvwxyz!"#$%&\'(', [3, 4, 6])
+plaintetx2:
+of winter had ceased;
+its snows were melted, its cutting winds ameliorated.  My wretched feet,
+flayed and swollen to lameness by the sharp air of January, began to heal
+and subside under the gentler b
+
+End of Task 1: Mathx Testing
+----------------------------------------
+
+----------------------------------------
+Start of Task 2: SDES Testing
+
+----- Part 1: Generic SDES:
+Testing e_SDES:
+Empty plaintext: Error(e_SDES): Invalid input
+Invalid key: Error(e_SDES): Invalid key
+CFB mode: Error(e_SDES): undefined mode
+
+Testing d_SDES:
+Empty plaintext: Error(d_SDES): Invalid input
+Invalid key: Error(d_SDES): Invalid key
+CFB mode: Error(d_SDES): undefined mode
+
+Testing valid modes:
+mode = ECB: ciphertext = jGE7NL  plaintext = CP460
+mode = CBC: ciphertext = fe3h1r  plaintext = CP460
+mode = OFB: ciphertext = h9k09   plaintext = CP460
+
+----- Part 2: LFSR:
+Testing LFSR:
+LFSR([0, 1, 0, 1],1011,7) = 1101101
+LFSR([0, 0, 1, 1],1000,16) = 0001001101011110
+LFSR([0, 1, 1, 1, 0],10001,16) = 1000101100010110
+Error(LFSR): invalid equations
+Error(LFSR): invalid equations
+Error(LFSR): invalid IG
+Error(LFSR): invalid IG
+Error(LFSR): invalid bits
+Error(LFSR): invalid bits
+
+Testing get_IV:
+key_size = 9,  block_size = 12, get_IV = 100111100111
+key_size = 9,  block_size = 16, get_IV = 1001111001111001
+key_size = 10, block_size = 16, get_IV = 0101000101000101
+
+----- Part 3: CBC Mode
+key        = 111000111
+plaintext  = CBC is an abbreviation of Cipher Block Chaining
+ciphertext = AFafkIdNPAWveSK3TDQ2FAX34BGflhb22EgqQC DSenTRUGp
+ciphertext2= CBC is an abbreviation of Cipher Block Chaining
+
+key        = 011001011
+plaintext  = CBC is an abbreviation of Cipher Block Chaining
+ciphertext = ykhbKRbg2PMsas QE0bBdGCOcSb0W2JuplxIRb2BC923I6CH
+ciphertext2= CBC is an abbreviation of Cipher Block Chaining
+
+----- Part 4: OFB Mode
+key        = 111000111
+plaintext  = OFB stands for Output Feedback
+ciphertext = 5jRUleFGpKrj7qk3jVQcvzHJuPQ8U3
+ciphertext2= OFB stands for Output Feedback
+
+key        = 011001010
+plaintext  = What is the difference between encryption and decryption in OFB?
+ciphertext = panP xHCZxw1kOP7LwrAt1oHpAZQAkq2CEvJsId4fVInHLCXBj6RVL7JymZmiIU?
+ciphertext2= What is the difference between encryption and decryption in OFB?
+
+----- Part 5: SDES3 Cryptanalysis:
+key = 100110100
+plaintext = and me, at that time my chosen
+comrade--one Mary Ann Wilson; a shrewd, observant personage, whose
+society I took pleasure in, partly because she was witty and original,
+and partly because she had a ma
+
+End of Task 2: SDES Testing
+----------------------------------------
+
+----------------------------------------
+Start of Task 3: Public X Testing
+
+----- Part 1: RSA Key:
+p = 19973267
+q = 17590829
+m = 351346324368343
+n = 351346286804248
+e = 32452869
+d = 196547411782573
+
+----- Part 2: LRM exponentiation:
+(66**13) mod 20 = 16
+(5**117) mod 19 = 1
+(4**60) mod 69 = 58
+(1234567890**151515151515151515) mod 190 = 20
+
+----- Part 3: BA Encoding:
+encode_BA(A) = 0
+encode_BA(a) = 26
+encode_BA( ) = 94
+encode_BA(AA) = 0
+encode_BA(BA) = 96
+encode_BA(??) = 7954
+encode_BA(zZ) = 4921
+encode_BA(ABC de) = 87573246
+
+decode_BA(0,1) = A
+decode_BA(0,3) = AAA
+decode_BA(26,1) = a
+decode_BA(27,4) = AAAb
+decode_BA(96,8) = AAAAAABA
+decode_BA(7954,2) = ??
+decode_BA(4921,3) = AzZ
+decode_BA(87573246,6) = ABC de
+
+----- Part 4: Encryption:
+Case 1: Use instructor's public key:
+
+Encryption using instructor public key:
+plaintext:  Your theory is crazy, but it's not crazy enough to be true
+key:  (351346324368343, 32452869)
+ciphertext:  C-JX`g<WDQYcMqFqARf}9nF>DFVmD;1)BjxJM<<2Cf'hwiRvC+@9Wuv D'K2jV>3C6'0Qk}gB$kScKoZ
+
+Case 2: Use your public key:
+plaintext:  Your theory is crazy, but it's not crazy enough to be true
+key:  (<your m>, <your e>)
+ciphertext:  <your output>
+
+----- Part 5: Decryption:
+Decrypt using instructor's public key:
+CERT stands for Computer Emergency Response Team
+
+The instructor sent me the following question:
+<some question>
+
+----- Part 6: Digital Signatures:
+Retrieved message:
+<some message>
+Signed by:
+<someone in class>
+
+End of Task 3: Public X Testing
+----------------------------------------
+
+----------------------------------------
+Start of Task 4: Transposex Cipher Testing
+
+----- Part 1: En-padding
+List before padding: [['a', 'b'], ['c']]
+list after padding: [['a', 'b'], ['c', 'q']]
+
+List before padding: [['a', 'b', 'c'], ['d', 'e'], ['f', 'g']]
+list after padding: [['a', 'b', 'c'], ['d', 'e', 'x'], ['f', 'g', 'x']]
+
+List before padding: [['a', 'b'], ['c'], ['d'], ['e']]
+list after padding: [['a', 'b'], ['c', '#'], ['d', '#'], ['e', '#']]
+
+List before padding: [['a', 'b'], ['c', 'd'], ['e', 'f'], ['g', 'h']]
+list after padding: [['a', 'b'], ['c', 'd'], ['e', 'f'], ['g', 'h']]
+
+List before padding: [['a', 'b'], ['c'], ['d'], ['e']]
+list after padding: [['a', 'b'], ['c', 'Q'], ['d', 'Q'], ['e', 'Q']]
+
+List before padding: []
+list after padding: []
+
+List before padding: a
+Error(_en_pad_transposex): invalid input list
+
+List before padding: ['a', 'b', 'c']
+Error(_en_pad_transposex): invalid input list
+
+List before padding: [['a', 'b'], 3, ['c', 'd']]
+Error(_en_pad_transposex): invalid input list
+
+----- Part 2: Encryption
+key = 4
+plaintext = THISFINALEXAMISEASY
+ciphertext= TFLMAHIEISINXSYSAAEQ
+
+key = 14
+plaintext = Passwords are like underwear: don’t let people see it, change it very often, and you shouldn’t share it with strangers.
+ciphertext= Pl:oho raai pafsenskdlnth gseoegeoiew n enutrou’s ,l srntei dw.dd etaniQsel  n’tQ reivdthQawtte   Qre ,ryssQeap yohtQ rec uarQ
+
+key = -1
+plaintext = THISFINALEXAMISEASY
+Error (e_transposex): invalid key
+ciphertext= 
+
+----- Part 3: Decryption
+key = 4
+ciphertext = TFLMAHIEISINXSYSAAEQ
+plaintext= THISFINALEXAMISEASY
+
+key = 14
+ciphertext = Pl:oho raai pafsenskdlnth gseoegeoiew n enutrou’s ,l srntei dw.dd etaniQsel  n’tQ reivdthQawtte   Qre ,ryssQeap yohtQ rec uarQ
+plaintext= Passwords are like underwear: don’t let people see it, change it very often, and you shouldn’t share it with strangers.
+
+key = -1
+ciphertext = TFLMAHIEISINXSYSAAEQ
+Error (d_transposex): invalid key
+plaintext= 
+
+----- Part 4: analyze plaintext:
+#keys = -1 for plaintext = 12
+#keys = -1 for plaintext = ['abc']
+#keys =  0 for plaintext = 
+#keys =  0 for plaintext = X
+#keys =  0 for plaintext = Pi
+#keys =  1 for plaintext = len
+#keys =  4 for plaintext = Crypto
+#keys = 10 for plaintext = Cryptography
+#keys = 17 for plaintext = CP460: Cryptography
+#keys =  1 for plaintext = AAA
+#keys =  1 for plaintext = BBBB
+#keys =  3 for plaintext = CCCCC
+#keys =  2 for plaintext = DDDDDD
+#keys =  5 for plaintext = EEEEEEE
+#keys =  4 for plaintext = FFFFFFFF
+#keys =  2 for plaintext = A to Q
+#keys =  1 for plaintext = Generate base from A to Q
+#keys =  2 for plaintext = The 17th character of the alphabet is Q
+#keys =  4 for plaintext = In CP460, the default padding character is Q
+#keys =  0 for plaintext = QQQQ
+#keys =  0 for plaintext = QQQAQ
+#keys =  0 for plaintext = QQBQQQQ
+#keys =  2 for plaintext = QQQCQQQQ
+#keys =  1 for plaintext = QDQQQQQQQ
+#keys =  4 for plaintext = QQQQQEQQQQQQ
+#keys =  0 for plaintext = FAQ
+#keys =  1 for plaintext = FAQQ
+#keys =  0 for plaintext = FAQQQ
+#keys =  2 for plaintext = FAQQQQ
+#keys =  4 for plaintext = FAQQQQQQQQQQ
+
+----- Part 5: analyze ciphertext:
+ciphertext = 12
+keys = []
+
+ciphertext = ['abc']
+keys = []
+
+ciphertext = 
+keys = []
+
+ciphertext = p
+keys = []
+
+ciphertext = pi
+keys = []
+
+ciphertext = QQQ
+keys = []
+
+ciphertext = Cytlg sCytgah n rpaayirpooyi rporpyadCytnlss
+keys = [2, 4, 11, 22]
+
+ciphertext = CppPlt4io6eg0dr: a CpArhpyy
+keys = [3, 9]
+
+ciphertext = Ticr hse 2i m10sDb32 ee,0
+keys = [5]
+
+ciphertext = fxaQ
+keys = [2]
+
+ciphertext = TFLMAHIEISINXSYSAAEQ
+keys = [2, 4, 5, 10]
+
+ciphertext = Cytaar onnyigdapsr lt aCyoCprslrhyioyypsgp tQ
+keys = [3, 5, 9, 15]
+
+ciphertext = CA gPpCr4pra6lyp0iph:ety doQ
+keys = [2, 4, 7, 14]
+
+ciphertext = Qs cu b eaaAursDeeiT
+keys = [2, 4, 5, 10]
+
+ciphertext = Qnssud ie acuSr eteAsa D cbTakas
+keys = [2, 4, 8, 16]
+
+ciphertext = SQbtuaaescuikec   aaAnrDdeT  s
+keys = [2, 3, 5, 6, 10, 15]
+
+ciphertext = Ti shzvie em wrpQaylus e
+keys = [2, 3, 4, 6, 8, 12]
+
+ciphertext = Aiu l tes Py pQr ieuiQsceou iureaae
+keys = [5, 7]
+
+ciphertext = Tu sshiQ iizuwms eap ouslQne e
+keys = [2, 3, 5, 6, 10, 15]
+
+ciphertext = Qsu iwza so ns iSmtpalcekQ
+keys = [2, 13]
+
+ciphertext = Qnudeeude  tAoD TP riiso reixttyeQ
+keys = [2, 17]
+
+ciphertext = Qiuniez  Coinp hAefrfQ
+keys = [2, 11]
+
+ciphertext = Tehxea mP rwiaosr idtiyf fQiuceuulet Q
+keys = [2, 3, 19]
+
+ciphertext = Sau  tnefladsuec  nakQa rsurtn eeoQ
+keys = [2, 5, 7]
+
+ciphertext = Cu esotSnQmeccQprieQ
+keys = [2, 3, 4, 5, 10]
+
+ciphertext = Ptsroeitonnoifaennelt gsQrT sQaePiQ
+keys = [5, 7]
+
+ciphertext = D i noiFcItngosn sir cReteaieQanndsQlsdepQ
+keys = [2, 3, 6, 7, 14, 21]
+
+ciphertext = Qiiautcniasdzl    QSoFutnoea rucDeekinssgs Q
+keys = [1, 2, 4, 11, 22]
+
+ciphertext = Qs rQsdu Piu iearteSeuniyutsedo euQ
+keys = [1, 5, 7]
+
+ciphertext = CUQiooREuefnI adeaTol slIfipssQ friQ
+keys = [2, 3, 4, 6, 9, 12, 18]
+
+ciphertext = Tstvlvlh ieieyiQt t ssuaQaAi atutnsiniaiaQ
+keys = [2, 3, 6, 7, 14, 21]
+
+ciphertext = Atv t  ieQaQQt utuuaaaieatnlvunidiee
+keys = [2, 3, 4, 6, 9, 12, 18]
+
+ciphertext = Tdh eQ uQaulainttaittiavtei vQeu eaune
+keys = [2, 19]
+
+ciphertext = Dniissgi icStsca hlAe nmFaeolQryQesQ
+keys = [2, 3, 4, 6, 9, 12, 18]
+
+ciphertext = K uSaLxQli QinOQ
+keys = [2, 3, 4, 8]
+
+End of Task 4: Transposex Cipher Testing
+----------------------------------------
+
+----------------------------------------
+Start of Task 5: Doublex Cipher Testing
+
+----- Part 1: ciphertext51:
+file = ciphertext51_your_name.txt
+ciphertext = 
+rtenrttnlh di akho i ,eh ome tooiytufg tsoedh rdleeProtohh edo-e
+teo Vst,ynso fnokse h hsaehweb ahecealb ct. s at oaa ehe veglqr.atcr
+n drva og,hsh eaainpsif ihs.h sh vy  horwe dn ee ecs teafeot qrhel
+Cipher1 = <hidden>, key = <hidden>
+Cipher2 = <hidden>, key = <hidden>
+plaintext = 
+two McCarthys were seen after the time when William Crowder, the
+game-keeper, lost sight of them. The Boscombe Pool is thickly wooded
+round, with just a fringe of grass and of reeds round the edge. A 
+
+----- Part 2: ciphertext52:
+file = ciphertext52_your_name.txt
+ciphertext = 
+8768z r888885 u72zz888575s z68u8788z 74v8885, 6885z 83876883 68 8772y88 w6885 8768z 777368w88z
+8776wu887577 7685 838788 68v887383727388. 4776u 7874u8372w88 8268u 68 v88787275766873 w767183727388 7477 
+Cipher1 = <hidden>, key = <hidden>
+Cipher2 = <hidden>, key = <hidden>
+plaintext = 
+had been suddenly dashed open, and that a huge man had framed
+himself in the aperture. His costume was a peculiar mixture of the
+professional and of the agricultural, having a black top-hat, a long
+fr
+
+----- Part 3: ciphertext53:
+file = ciphertext53_your_name.txt
+ciphertext = 
+*|` <*/ ~;--
+~;+_~ @.. _<;~:{ :,S @ `})[|@: ~;-- ` (.. ?>.(`[*.^-]/S ~;+_~ @..
+}<~;+;^S \` -`<?/ ~;-- *>` @{ ?'-?/ ,<^?*^~^})S -- ~;* ^^:})[ @?^;|?U
++@^'[+_U ) /+_^({)]/ ~;-- ~;+_~ @.. > >== ?/==?>-^ 
+Cipher1 = <hidden>, key = <hidden>
+Cipher2 = <hidden>, key = <hidden>
+plaintext = 
+see all that
+there was behind me. i confess that i was disappointed. there was
+nothing. at least that was my first impression. at the second glance,
+however, i perceived that there was a man standing 
+
+End of Task 5: Doublex Testing
+----------------------------------------
+

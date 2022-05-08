@@ -1,0 +1,477 @@
+----------------------------------------
+Start of Task 1: Modular Arithmetic Library Testing
+
+1- Testing residue_list:
+residue_list(10) =  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+residue_list(16) =  [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+residue_list(1) =   [0]
+residue_list(-5) =  Error(residue_list): Invalid mod
+residue_list([5]) = Error(residue_list): Invalid mod
+
+2- Testing residue:
+residue(17,5) =  2
+residue(3429,87) =  36
+residue(3.4,5) = Error(residue): Invalid num
+residue(13,-5) = Error(residue): Invalid mod
+
+3- Testing is_congruent:
+is_congruent(22,33,11)= True
+is_congruent(7,9,3) =   False
+is_congruent(3.4,5,9)=  Error(is_congruent): Invalid input num
+is_congruent(3,5,-9) =  Error(is_congruent): Invalid mod
+
+4- Testing add:
+add(17,23,7) =  5
+add(-17,23,7) = 6
+add(17,-23,7) = 1
+add(9,17,0) =   Error(add): Invalid mod
+add([9],17,7) = Error(add): Invalid input num
+add(9,17.1,8) = Error(add): Invalid input num
+
+5- Testing sub:
+sub(17,23,7) =  1
+sub(-17,23,7) = 2
+sub(17,-23,7) = 5
+sub(9,17,0) =   Error(sub): Invalid mod
+sub([9],17,7) = Error(sub): Invalid input num
+sub(9,17.1,8) = Error(sub): Invalid input num
+
+6- Testing additive inverse:
+add_inv(3,5) =   2
+add_inv(6,1) =   0
+add_inv(22,10)=  8
+add_inv(6,-1) =  Error(add_inv): Invalid mod
+add_inv(6.2,6) = Error(add_inv): Invalid input num
+sub(4,2,5) == add(4,add_inv(2,5),5)? = True
+
+7- Testing Addition Table:
+Addition Table for mode 5 =
+[0, 1, 2, 3, 4]
+[1, 2, 3, 4, 0]
+[2, 3, 4, 0, 1]
+[3, 4, 0, 1, 2]
+[4, 0, 1, 2, 3]
+Addition Table for mode 8 =
+[0, 1, 2, 3, 4, 5, 6, 7]
+[1, 2, 3, 4, 5, 6, 7, 0]
+[2, 3, 4, 5, 6, 7, 0, 1]
+[3, 4, 5, 6, 7, 0, 1, 2]
+[4, 5, 6, 7, 0, 1, 2, 3]
+[5, 6, 7, 0, 1, 2, 3, 4]
+[6, 7, 0, 1, 2, 3, 4, 5]
+[7, 0, 1, 2, 3, 4, 5, 6]
+Addition Table for mode 0 =
+Error(add_table): Invalid mod
+
+8- Testing Subtraction Table:
+Subtraction Table for mode 5 =
+[0, 4, 3, 2, 1]
+[1, 0, 4, 3, 2]
+[2, 1, 0, 4, 3]
+[3, 2, 1, 0, 4]
+[4, 3, 2, 1, 0]
+Subtraction Table for mode 8 =
+[0, 7, 6, 5, 4, 3, 2, 1]
+[1, 0, 7, 6, 5, 4, 3, 2]
+[2, 1, 0, 7, 6, 5, 4, 3]
+[3, 2, 1, 0, 7, 6, 5, 4]
+[4, 3, 2, 1, 0, 7, 6, 5]
+[5, 4, 3, 2, 1, 0, 7, 6]
+[6, 5, 4, 3, 2, 1, 0, 7]
+[7, 6, 5, 4, 3, 2, 1, 0]
+Subtraction Table for mode [5] =
+Error(sub_table): Invalid mod
+
+9- Testing Addition Inverse Table:
+Addition Inverse Table for mode 5 =
+[0, 1, 2, 3, 4]
+[0, 4, 3, 2, 1]
+Addition Inverse Table for mode 26 =
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+[0, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+Addition Inverse Table for mode -2 =
+Error(add_inv_table): Invalid mod
+
+10- Testing mul:
+mul(3,5,5) =    0
+mul(8,3,7) =    3
+mul(17,-3,7)=   5
+mul(9,17,0) =   Error(mul): Invalid mod
+mul([9],17,7) = Error(mul): Invalid input num
+mul(9,17.1,8) = Error(mul): Invalid input num
+
+11- Testing Multiplication Table:
+Multiplication Table for mode 4 =
+[0, 0, 0, 0]
+[0, 1, 2, 3]
+[0, 2, 0, 2]
+[0, 3, 2, 1]
+Multiplication Table for mode 5 =
+[0, 0, 0, 0, 0]
+[0, 1, 2, 3, 4]
+[0, 2, 4, 1, 3]
+[0, 3, 1, 4, 2]
+[0, 4, 3, 2, 1]
+Multiplication Table for mode -5 =
+Error(mul_table): Invalid mod
+
+12- Testing is_prime:
+is_prime(97) =  True
+is_prime(479) = True
+is_prime(1044)= False
+is_prime(0) =   False
+is_prime(-17) = False
+
+13- Testing gcd:
+gcd(629,357) =  17
+gcd(440,700) =  20
+gcd(-30,700) =  10
+gcd(540,-539) = 1
+gcd(711,0)   = Error(gcd): Invalid input num
+gcd(0,311)   = Error(gcd): Invalid input num
+gcd([9],27)  = Error(gcd): Invalid input num
+
+14- Testing is_relatively_prime:
+is_relatively_prime(4,5) =     True
+is_relatively_prime(540,539)=  True
+is_relatively_prime(18,26) =   False
+is_relatively_prime(0,26) =    False
+is_relatively_prime([1],26) =  Error(is_relatively_prime): Invalid input num
+
+15- Testing has_mul_inv:
+has_mul_inv(4,5) =     True
+has_mul_inv(17,26) =   True
+has_mul_inv(18,26) =   False
+has_mul_inv(0,26) =    False
+has_mul_inv([1],26) =  Error(has_mul_inv)" Invalid input num
+
+16- Testing EEA:
+eea(700,440) =   [20, -5, 8]
+eea(88,35) =     [1, 2, -5]
+eea(35,88) =     [1, -5, 2]
+eea(-88,35) =    [1, 2, -5]
+eea(88,-35) =    [1, 2, -5]
+eea(0,777) =     Error(eea): Invalid input num
+
+17- Testing mul_inv:
+mul_inv(23,26) =   17
+mul_inv(5,6) =     5
+mul_inv(24,26) =   NA
+mul_inv(700,440) = NA
+mul_inv(0,777) =   NA
+mul_inv(1,[99]) =  Error(mul_inv): Invalid mod
+mul_inv([1],99) =  Error(mul_inv)" Invalid input num
+
+18- Testing Multiplicative Inverse Table:
+Multiplicative Inverse Table for mode 5 =
+[0, 1, 2, 3, 4]
+['NA', 1, 3, 2, 4]
+Multiplicative Inverse Table for mode 26 =
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25]
+['NA', 1, 'NA', 9, 'NA', 21, 'NA', 15, 'NA', 3, 'NA', 19, 'NA', 'NA', 'NA', 7, 'NA', 23, 'NA', 11, 'NA', 5, 'NA', 17, 'NA', 25]
+Multiplicative Inverse Table for mode -2 =
+Error(mul_inv_table): Invalid mod
+
+End of Task 1 Testing
+----------------------------------------
+
+----------------------------------------
+Start of Task 2: Decimation Cipher Testing
+
+--------------- Testing Encryption/Decryption:
+key =  ('abcdefghijklmnopqrstuvwxyz', 5)
+plaintext =   Strike in progress
+ciphertext=   Mrhoyu on xhsehumm
+plaintext2=   Strike in progress
+
+key =  ('abcdefghijklmnopqrstuvwxyz ?!', 46)
+plaintext =   Is mission accomplished?
+ciphertext=   Uqhbuqqugshaffgbxnuqdkwy
+plaintext2=   Is mission accomplished?
+
+key =  ('abcdefghijklmnopqrstuvwxyz ?!.', 10)
+plaintext =   Mission Failed!
+Error(e_decimation): Invalid key
+Error(d_decimation): Invalid key
+
+key =  ('abcdefghijklmnopqrstuvwxyz ?!.', 11)
+plaintext =   Plan B ... initiated
+ciphertext=   PbaxqLqtttq!x!.!a.od
+plaintext2=   Plan B ... initiated
+
+--------------- Testing cryptanalysis:
+ciphertext= Mrhoyu on xhsehumm
+plaintext = Strike in progress
+key       = ('abcdefghijklmnopqrstuvwxyz', 5)
+Found after 177 attempts
+
+ciphertext= tfprp arp twk mnchs kg qrybtkorabfy nc tfns wkrdh: qrybtkorabfy tfat wndd stkb ykur mnh snstpr grkl rpahnco ykur gndps, ach qrybtkorabfy tfat wndd stkb laekr okvprclpcts grkl rpahnco ykur gndps.
+plaintext = there are two kinds of cryptography in this world: cryptography that will stop your kid sister from reading your files, and cryptography that will stop major governments from reading your files.
+key       = ('abcdefghijklmnopq', 8)
+Found after 71 attempts
+
+ciphertext= Vfobo abo vmk wcnry kl ubghvkibahfg cn vfcy mkbtr: ubghvkibahfg vfav mctt yvkh gksb wcr ycyvob lbkq boarcni gksb lctoy, anr ubghvkibahfg vfav mctt yvkh qazkb ikpobnqonvy lbkq boarcni gksb lctoy.
+plaintext = There are two kinds of cryptography in this world: cryptography that will stop your kid sister from reading your files, and cryptography that will stop major governments from reading your files.
+key       = ('abcdefghijklmnopqrstuvwxyz', 23)
+Found after 185 attempts
+
+ciphertext= Rioko ako rlq c#$"% qb hksdrqvkadis #$ ri#% lqkw": hksdrqvkadis riar l#ww %rqd sqek c#" %#%rok bkqj koa"#$v sqek b#wo%, a$" hksdrqvkadis riar l#ww %rqd japqk vqyok$jo$r% bkqj koa"#$v sqek b#wo%.
+plaintext = There are two kinds of cryptography in this world: cryptography that will stop your kid sister from reading your files, and cryptography that will stop major governments from reading your files.
+key       = ('abcdefghijklmnopqrstuvwxyz!"#$%&\'', 20)
+Found after 304 attempts
+
+ciphertext= Gkltl atl gfu jwi+& ux yt$'gu*ta'k$ wi gkw& futv+: yt$'gu*ta'k$ gkag fwvv &gu' $ust jw+ &w&glt xtu( tla+wi* $ust xwvl&, ai+ yt$'gu*ta'k$ gkag fwvv &gu' (a)ut *u%lti(lig& xtu( tla+wi* $ust xwvl&.
+plaintext = There are two kinds of cryptography in this world: cryptography that will stop your kid sister from reading your files, and cryptography that will stop major governments from reading your files.
+key       = ('abcdefghijklmnopqrstuvwxyz!"#$%&\'()*+', 12)
+Found after 371 attempts
+
+End of Task 2 Testing
+----------------------------------------
+
+----------------------------------------
+Start of Task 3: Affine Cipher Testing
+
+--------------- Testing Encryption/Decryption:
+key =  ('abcdefghijklmnopqrstuvwxyz', [5, 8])
+plaintext =   Strike in progress
+ciphertext=   Uzpwgc wv fpampcuu
+plaintext2=   Strike in progress
+
+key =  ('abcdefghijklmnopqrstuvwxyz ?!', [45, 3])
+plaintext =   Is mission accomplished?
+ciphertext=   Pbnvpbbpyindggyvlfpb!jwa
+plaintext2=   Is mission accomplished?
+
+key =  ('abcdefghijklmnopqrstuvwxyz ?!.', [10, 19])
+plaintext =   Mission Failed!
+Error(e_affine): Invalid key
+Error(d_affine): Invalid key
+
+key =  ('abcdefghijklmnopqrstuvwxyz ?!.', [11, 17])
+plaintext =   Plan B ... initiated
+ciphertext=   Csrkd!dgggdpkpqprqbu
+plaintext2=   Plan b ... initiated
+
+--------------- Testing cryptanalysis:
+ciphertext= There bre two kincs of dryptogrbphy in this worlc: dryptogrbphy thbt will stop your kic sister from rebcing your files, bnc dryptogrbphy thbt will stop mbjor governments from rebcing your files.
+plaintext = There are two kinds of cryptography in this world: cryptography that will stop your kid sister from reading your files, and cryptography that will stop major governments from reading your files.
+key       = ('abcd', [3, 1])
+Found after 11 attempts
+
+ciphertext= Tkfrf crf two einhs od jryptobrcpky in tkis worlh: jryptobrcpky tkct will stop your eih sistfr drom rfchinb your dilfs, cnh jryptobrcpky tkct will stop mcgor bovfrnmfnts drom rfchinb your dilfs.
+plaintext = There are two kinds of cryptography in this world: cryptography that will stop your kid sister from reading your files, and cryptography that will stop major governments from reading your files.
+key       = ('abcdefghijk', [9, 2])
+Found after 297 attempts
+
+ciphertext= Ptuhu ehu poi skrdy il mhwzpicheztw kr ptky oihjd: mhwzpicheztw ptep okjj ypiz wigh skd ykypuh lhia huedkrc wigh lkjuy, erd mhwzpicheztw ptep okjj ypiz aebih cixuhraurpy lhia huedkrc wigh lkjuy.
+plaintext = There are two kinds of cryptography in this world: cryptography that will stop your kid sister from reading your files, and cryptography that will stop major governments from reading your files.
+key       = ('abcdefghijklmnopqrstuvwxyz', [17, 4])
+Found after 3576 attempts
+
+ciphertext= Nzbyb xyb nka wgtuf aj my!inaryxiz! gt nzgf kaydu: my!inaryxiz! nzxn kgdd fnai !avy wgu fgfnby jyal ybxugtr !avy jgdbf, xtu my!inaryxiz! nzxn kgdd fnai lxoay racbytlbtnf jyal ybxugtr !avy jgdbf.
+plaintext = There are two kinds of cryptography in this world: cryptography that will stop your kid sister from reading your files, and cryptography that will stop major governments from reading your files.
+key       = ('abcdefghijklmnopqrstuvwxyz!', [8, 23])
+Found after 3859 attempts
+
+ciphertext= Ybxox dox yc+ qg&st +# nomey+(odebm g& ybgt c+ovs: nomey+(odebm ybdy cgvv ty+e m+$o qgs tgtyxo #o+! oxdsg&( m+$o #gvxt, d&s nomey+(odebm ybdy cgvv ty+e !dl+o (+)xo&!x&yt #o+! oxdsg&( m+$o #gvxt.
+plaintext = There are two kinds of cryptography in this world: cryptography that will stop your kid sister from reading your files, and cryptography that will stop major governments from reading your files.
+key       = ('abcdefghijklmnopqrstuvwxyz!"#$%&\'()*+', [5, 3])
+Found after 9634 attempts
+
+End of Task 3 Testing
+----------------------------------------
+
+----------------------------------------
+Start of Task 4: Matrix Library Testing
+
+
+3- Testing print_matrix
+print_matrix([])=
+[]
+print_matrix([10, 20, 30])=
+[10, 20, 30]
+print_matrix([[10], [20], [30]])=
+[10]
+[20]
+[30]
+print_matrix([[10, 20, 30], [40, 50, 60], [70, 80, 10]])=
+[10, 20, 30]
+[40, 50, 60]
+[70, 80, 10]
+print_matrix([[10, 20, 30], [40, 50, 60], [70, 80]])=
+Error(print_matrix): Invalid input
+
+1- Testing is_vector:
+is_vector([]) =  True
+is_vector([10]) =  True
+is_vector([10, 20]) =  True
+is_vector(10) =  False
+is_vector([3, 4.5]) =  False
+is_vector([[]]) =  False
+is_vector([[1, 2], [3, 4]]) =  False
+
+2- Testing is_matrixis_matrix([]) =  True
+is_matrix([5]) =  True
+is_matrix([[1, 2], [3, 4]]) =  True
+is_matrix([[1], [2], [3]]) =  True
+is_matrix([[1, 2, 3], [4, 5, 6]]) =  True
+is_matrix(5) =  False
+is_matrix([5.5]) =  False
+is_matrix([[1, 2, 3], [4, 5]]) =  False
+
+4/5/6- Testing size functions
+get_r([])    =  0
+get_c([])    =  0
+get_size([]) =  [0, 0]
+
+get_r([1, 2, 3])     =  1
+get_c([1, 2, 3])     =  3
+get_size([1, 2, 3])  =  [1, 3]
+
+get_r([[1, 2], [3, 4], [5, 6]])    =  3
+get_c([[1, 2], [3, 4], [5, 6]])    =  2
+get_size([[1, 2], [3, 4], [5, 6]]) =  [3, 2]
+
+get_r([[1, 2], [3]])    =  Error(get_r): invalid input
+get_c([[1, 2], [3]])    =  Error(get_c): invalid input
+get_size([[1, 2], [3]]) =  Error(get_size): invalid input
+
+7- Testing is_square
+is_square([])    =  True
+is_square([5])    =  True
+is_square([5, 6])    =  False
+is_square([[1, 2], [3, 4]])    =  True
+is_square([5.5])    =  False
+
+8/9/10- Testing getter functions
+get_row([[1, 2, 3], [4, 5, 6]],0)        = [1, 2, 3]
+get_Column([[1, 2, 3], [4, 5, 6]],1)     = [[2], [5]]
+get_element([[1, 2, 3], [4, 5, 6]],0,1) = 2
+
+get_row([[1, 2, 3], [4, 5, 6]],2)        = Error(get_row): invalid row number
+get_Column([[1, 2, 3], [4, 5, 6]],2)     = [[3], [6]]
+get_element([[1, 2, 3], [4, 5, 6]],2,2) = Error(get_element): invalid element position
+
+get_row([[1, 2, 3], [4, 5, 6]],1)        = [4, 5, 6]
+get_Column([[1, 2, 3], [4, 5, 6]],3)     = Error(get_column): invalid column number
+get_element([[1, 2, 3], [4, 5, 6]],1,3) = Error(get_element): invalid element position
+
+get_row([[1, 2, 3], []],1)        = Error(get_row): invalid input matrix
+get_Column([[1, 2, 3], []],3)     = Error(get_column): invalid input matrix
+get_element([[1, 2, 3], []],1,3) = Error(get_element): invalid input matrix
+
+11- Testing new_matrix
+new_matrix(0,0,0)=
+[]
+new_matrix(0,1,0)=
+Error(new_matrix): invalid size
+new_matrix(1,1,0)=
+[0]
+new_matrix(2,1,0)=
+[[0], [0]]
+new_matrix(1,2,0)=
+[0, 0]
+new_matrix(3,3,0)=
+[[0, 0, 0], [0, 0, 0], [0, 0, 0]]
+new_matrix(-1,3,0)=
+Error(new_matrix): invalid size
+new_matrix(3,-5,0)=
+Error(new_matrix): invalid size
+new_matrix(3,5,3.5)=
+Error(new_matrix): invalid num
+
+12- Testing get_I
+get_I(-1)    = Error(get_I): invalid size
+get_I(0)    =  Error(get_I): invalid size
+get_I(1)    =  [1]
+get_I(2)    =  [[1, 0], [0, 1]]
+get_I(3)    =  [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+
+13- Testing is_identity
+is_identity([1]) = True
+is_identity([[1, 0, 0], [0, 1, 0], [0, 0, 1]]) = True
+is_identity([[1, 0], [1, 1]]) = False
+is_identity([[1, 0], [0, 1, 0]]) = False
+
+14- Testing scalar_mul
+scalar_mul([[1, 2], [3, 4]],10) = [[10, 20], [30, 40]]
+scalar_mul([1, 2, 3, 4],10) = [10, 20, 30, 40]
+scalar_mul([],10) = Error(scalar_mul): invalid input
+scalar_mul([1, 2, 3, [4]],10) = Error(scalar_mul): invalid input
+scalar_mul([[1, 2], [3, 4]],[10]) = Error(scalar_mul): invalid input
+
+15- Testing mul
+mul([[1, 2], [3, 4]],[[10, 20], [30, 40]])=
+[[70, 100], [150, 220]]
+mul([[1, 2, 3], [5, 6, 7]],[[10, 20], [30, 40], [50, 60]])= [[220, 280], [580, 760]]
+mul([5],[10])= [50]
+mul([0, 1, 2],[[0], [1], [2]])= [5]
+mul([[0], 1],[1, 0])= Error(mul): invalid input
+mul([1, 0],[[0], 1])= Error(mul): invalid input
+mul([[10, 20], [30, 40], [50, 60]],[[1, 2, 3], [5, 6, 7]])= [[110, 140, 170], [230, 300, 370], [350, 460, 570]]
+mul([[1, 2, 3], [5, 6, 7]],[[10, 20], [30, 40]])= Error(mul): size mismatch
+
+16- Testing matrix_mod
+matrix_mod([[1, 2], [3, 4]],2)= [[1, 0], [1, 0]]
+matrix_mod([1, 2, 3, 4],2)= [1, 0, 1, 0]
+matrix_mod([[3], [5]],3)= [[0], [2]]
+matrix_mod([[3], [5]],0)= Error(matrix_mod): invalid mod
+matrix_mod([3, [5]],6)= Error(matrix_mod): invalid input
+
+17- Testing det
+det([[1, 2], [3, 4]])= -2
+det([10])= Error(det): Unsupported matrix size
+det([[1, 1, 1], [2, 2, 2], [3, 3, 3]])= Error(det): Unsupported matrix size
+det([[1, 1, 1], [2, 2]])= Error(det): invalid input
+
+18- Testing inverse
+inverse([[1, 4], [8, 11]],26)= [[23, 20], [14, 21]]
+inverse([[4, 3], [1, 1]],5)= [[1, 2], [4, 4]]
+inverse([[1, 4], [8, 10]],26)= Error(inverse): matrix is not invertible
+inverse([1, 4, 8, 10],15)= Error(inverse): matrix is not invertible
+inverse([[4, 3], [1, 1]],-5)= Error(inverse): invalid mod
+inverse([[1, 2, 3], [4, 5, 6], [7, 8, 9]],7)= Error(inverse): Unsupported matrix size
+inverse([[1, 2, 3], [4, 5]],7)= Error(inverse): invalid input
+
+End of Task 4 Testing
+----------------------------------------
+
+-------------------------------------------
+Testing Q5: Hill Cipher
+
+key       = pear
+plaintext = lunch
+ciphertext= LCVINM
+plaintext2= lunch
+
+key       = apple
+plaintext = brunch
+ciphertext= VUNBBD
+plaintext2= brunch
+
+key       = fig
+plaintext = breakfast
+ciphertext= LNUYMHOMPM
+plaintext2= breakfast
+
+key       = mellon
+plaintext = dinner
+Error(e_hill): key is not invertible
+Error(d_hill): key is not invertible
+
+key       = apricot
+plaintext = lunch bag
+ciphertext= OJEDP XMW
+plaintext2= lunch bag
+
+key       = cherry
+plaintext = empty water bottle?
+Error(e_hill): key is not invertible
+Error(d_hill): key is not invertible
+
+key       = prune
+plaintext = full plates..of salad
+ciphertext= ZWOZ WBLNCC..JH KWJMFI
+plaintext2= full plates..of salad
+
+-------------------------------------------
